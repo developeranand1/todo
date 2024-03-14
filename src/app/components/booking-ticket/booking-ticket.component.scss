@@ -1,0 +1,24 @@
+.booking-title{
+    text-align: center;
+    color: var(--primary-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.search-btn {
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px solid var(--primary-color);
+    color: var(--bg-color);
+    background-color: var(--primary-color);
+    line-height: 25px;
+    padding: 5px 25px;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+
+  .booking-img img {
+    width: 100%;
+}

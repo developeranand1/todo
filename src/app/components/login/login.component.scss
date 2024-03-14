@@ -1,0 +1,58 @@
+.login-img {
+  height: 420px;
+  width: 528px;
+}
+
+.login-img img {
+  height: 420px;
+  width: 528px;
+}
+
+
+.login-avtar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-avtar img{
+    width: 65px;
+}
+
+
+.user-title{
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.show-password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.show-password label {
+  padding: 0px 0px 0px 10px;
+}
+
+.forget a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.login-btn {
+  font-size: 18px;
+  font-weight: 500;
+  border: 2px solid var(--primary-color);
+  color: var(--bg-color);
+  background-color: var(--primary-color);
+  line-height: 25px;
+  padding: 5px 25px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.register a {
+  color: var(--primary-color);
+  text-decoration: none;
+  padding-left:5px ;
+}
