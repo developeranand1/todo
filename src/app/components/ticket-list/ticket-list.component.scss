@@ -14,3 +14,56 @@
   padding: 30px 5px;
   background-color: var(--primary-color);
 }
+
+.card.train-details.mt-3 {
+  border: 2px solid var(--primary-color);
+}
+
+.fliter{
+  padding: 8px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-header {
+  background-color: var(--secondary-color);
+  color: var(--bg-color);
+}
+
+.date-now {
+  text-align: center;
+}
+
+.date-now .date {
+  padding-top: 10px;
+}
+
+.date-now .available-now {
+  background-color: seagreen;
+  color: var(--bg-color);
+  margin: 10px 20px 15px 20px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer !important;
+}
+
+
+.date-now .booked {
+  background-color:#cf3c48;
+  color: var(--bg-color);
+  margin: 10px 20px 15px 20px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer !important;
+}
+
+
+p.title {
+  font-size: 17px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 30px;
+  font-weight: 700;
+}

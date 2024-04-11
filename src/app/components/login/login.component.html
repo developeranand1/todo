@@ -13,15 +13,19 @@
           </div>
           <div class="col-md-6">
             <div class="login-avtar">
-                <img src="https://png.pngtree.com/png-clipart/20190520/original/pngtree-vector-users-icon-png-image_4144740.jpg" alt="">
+              <img
+                src="https://png.pngtree.com/png-clipart/20190520/original/pngtree-vector-users-icon-png-image_4144740.jpg"
+                alt=""
+              />
             </div>
             <h4 class="user-title mb-5">User Login</h4>
-            <form action="">
+            <form [formGroup]="userLogin">
               <div class="mt-3">
                 <input
                   type="email"
                   class="form-control"
                   placeholder="User Name"
+                  formControlName="userid"
                 />
               </div>
 
@@ -30,27 +34,32 @@
                   type="password"
                   class="form-control"
                   placeholder="Password"
+                  id="password"
+                  formControlName="password"
                 />
               </div>
               <div class="show-password mt-3">
                 <div class="show">
-                  <input type="checkbox" /> <label for="">Show Password</label>
+                  <input type="checkbox" (click)="showPassword()" />
+                  <label for="">Show Password</label>
                 </div>
                 <div class="forget">
                   <a routerLink="/forgot-password">Forget Password</a>
                 </div>
               </div>
 
-
               <div class="mt-3">
-                <button class="login-btn" routerLink="/booking-tickets">Login</button>
+                <button class="login-btn"  type="submit" (click)="onLoginUser()">
+                  Login
+                </button>
               </div>
-
             </form>
 
-          <div class="mt-3 text-center register">
-            <p>Don't have an account?<a routerLink="/register">Register</a></p>
-          </div>
+            <div class="mt-3 text-center register">
+              <p>
+                Don't have an account?<a routerLink="/register">Register</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>

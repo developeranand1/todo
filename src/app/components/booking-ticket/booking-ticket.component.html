@@ -5,42 +5,54 @@
         <div class="row">
           <div class="col-md-6">
             <h4 class="booking-title">Book Tickets</h4>
-            <form action="">
+            <form [formGroup]="ticketForm">
               <div class="row mt-3">
-                <div class="col-md-6">
-                  <select class="form-control">
-                    <option value="">From</option>
-                    <option value="">Hindi</option>
+                <div class="col-md-12">
+                  <select class="form-control" formControlName="from">
+                    <option *ngFor="let item of stations">
+                      {{ item.name }}
+                    </option>
                   </select>
-                </div>
-                <div class="col-md-6">
-                  <input type="date" class="form-control" />
                 </div>
               </div>
               <div class="row mt-3">
-                <div class="col-md-6">
-                  <select class="form-control">
-                    <option value="">To</option>
-                    <option value="">Hindi</option>
-                  </select>
-                </div>
-                <div class="col-md-6">
-                  <select class="form-control">
-                    <option value="">All Classes</option>
-                    <option value="">Hindi</option>
+                <div class="col-md-12">
+                  <select class="form-control" formControlName="to">
+                    <option *ngFor="let item of stationsTo">
+                      {{ item.name }}
+                    </option>
                   </select>
                 </div>
               </div>
               <div class="row mt-3">
                 <div class="col-md-6">
-                  <select class="form-control">
-                    <option value="">GENERAL</option>
-                    <option value="">Hindi</option>
+                  <input
+                    type="date"
+                    class="form-control"
+                    formControlName="date"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <select class="form-control" formControlName="typeSheet">
+                    <option *ngFor="let item of sheet">{{ item }}</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-md-6">
+                  <select class="form-control" formControlName="typeCota">
+                    <option *ngFor="let item of typeOfTicket">
+                      {{ item }}
+                    </option>
                   </select>
                 </div>
               </div>
               <div class="mt-3">
-                <button class="search-btn" routerLink="/ticket-list">
+                <button
+                  type="submit"
+                  class="search-btn"
+                  (click)="OnsearchTickets()"
+                >
                   Search
                 </button>
               </div>
